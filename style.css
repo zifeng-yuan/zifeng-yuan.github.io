@@ -273,6 +273,41 @@ ul.plain li:last-child { margin-bottom: 0; }
   margin-left: 3px;
 }
 
+/* ---------- Industry experience ---------- */
+
+/* Organisation and role on the left, dates pushed to the right edge; the
+   dates wrap under the role on narrow screens. */
+.exp-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2px 16px;
+  margin: 0 0 3px;
+  font-size: 16px;
+}
+.exp-org { font-weight: 700; }
+.exp-role { font-style: italic; }
+.exp-head .when {
+  color: var(--faint);
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.exp-desc {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 15px;
+  text-align: justify;
+}
+
+.exp ul.plain li {
+  font-size: 15.5px;
+  line-height: 1.45;
+  text-align: justify;
+}
+
 /* ---------- Footer ---------- */
 
 .footer {
@@ -304,5 +339,7 @@ ul.plain li:last-child { margin-bottom: 0; }
   .pub .authors,
   .pub-group .blurb,
   .news li,
+  .exp-desc,
+  .exp ul.plain li,
   #biography p { text-align: left; }
 }
