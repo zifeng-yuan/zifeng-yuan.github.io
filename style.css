@@ -1,5 +1,6 @@
 /* Zifeng Yuan — personal homepage
-   Serif academic layout: category bands, left thumbnail, justified body text. */
+   Serif academic layout: filterable publication list, left thumbnail with a
+   venue badge, justified body text. */
 
 :root {
   --text: #1a1a1a;
@@ -172,46 +173,103 @@ ul.plain li:last-child { margin-bottom: 0; }
 
 /* ---------- Publications ---------- */
 
-.pub-group { padding-top: 2px; }
-.pub-group + .pub-group { margin-top: 30px; }
+/* Filter pills, after jinyeying.github.io. The topic row is the larger pill
+   and fills with the link blue when active; the role row is smaller and only
+   tints, so the two rows read as primary and secondary. */
+.pub-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 8px;
+}
+.pub-filter-btn,
+.role-filter-btn {
+  font-family: inherit;
+  line-height: 1.3;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color .15s, border-color .15s, color .15s;
+}
+.pub-filter-btn {
+  padding: 5px 15px;
+  border: 1.5px solid #cfcfcf;
+  background: #f7f7f7;
+  color: #3d3d3d;
+  font-size: 14.5px;
+}
+.pub-filter-btn:hover { border-color: var(--link); color: var(--link); background: #eef2f9; }
+.pub-filter-btn.active { background: var(--link); border-color: var(--link); color: #fff; }
 
-/* Category band: maroon rule on the left, warm tint fading out to the right. */
-.pub-group > h3 {
-  margin: 0 0 15px;
-  padding: 7px 14px;
-  border-left: 5px solid var(--cat-bar);
-  background: linear-gradient(to right, var(--cat-bg) 0%, rgba(243, 240, 234, 0) 92%);
-  font-size: 17.5px;
-  font-weight: 700;
-  line-height: 1.35;
-  color: #2e2e2e;
+.role-filters { margin-bottom: 14px; align-items: center; }
+.role-filter-btn {
+  padding: 2px 11px;
+  border: 1px solid #dadada;
+  background: #fafafa;
+  color: #5f5f5f;
+  font-size: 13.5px;
+}
+.role-filter-btn:hover { border-color: #8a8a8a; color: #2e2e2e; }
+.role-filter-btn.active { background: #eef2f9; border-color: var(--link); color: var(--link); font-weight: 700; }
+.pub-filter-btn:focus-visible,
+.role-filter-btn:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+
+/* The * and † on the role buttons are lifted with relative positioning
+   rather than <sup>, which would make those buttons taller than the plain
+   ones. */
+.role-filter-btn .mark {
+  position: relative;
+  top: -0.3em;
+  margin-right: 3px;
+  font-size: 0.9em;
 }
 
-.pub-group .blurb {
+/* "6 of 16 papers": confirms that a role click took effect even when the top
+   of the list looks the same. */
+.pub-count {
+  margin-left: auto;
+  color: var(--faint);
+  font-size: 14px;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+/* Author marks: * equal contribution (orange), † corresponding author
+   (blue). */
+.eq { color: #d9822b; font-weight: 700; }
+.cl { color: var(--link); }
+.authors sup { font-size: 0.75em; line-height: 0; margin-left: 1px; }
+.authors sup.eq { font-size: 0.95em; }
+
+/* One-paragraph description of the selected topic. */
+.cat-blurb {
+  margin: 0 0 16px;
+  padding: 7px 14px;
+  border-left: 4px solid var(--cat-bar);
+  background: linear-gradient(to right, var(--cat-bg) 0%, rgba(243, 240, 234, 0) 92%);
   color: var(--muted);
   font-size: 15px;
-  margin: 0 0 16px;
-  padding-left: 5px;
   text-align: justify;
 }
 
-/* Every thumbnail sits in an identical frame; the figure is scaled to fit
-   inside it, so nothing is cropped or stretched. Figures are on white, so the
-   letterboxing is invisible. */
+.pub-empty { color: var(--muted); font-style: italic; }
+
+/* Every thumbnail sits in an identical 3:2 frame and the figure is scaled to
+   fit inside it, so nothing is cropped or stretched. Most figures are about
+   2:1, which leaves a white band at the top for the venue badge. */
 .pub {
   display: flex;
   align-items: flex-start;
   gap: 18px;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 .pub:last-child { margin-bottom: 0; }
+.pub[hidden] { display: none; }
 
-/* 39:20 ≈ 1.95, the median aspect ratio of the figures themselves, so most of
-   them fill the frame almost edge to edge. */
 .thumb {
+  position: relative;
   flex: 0 0 auto;
-  width: 264px;
-  aspect-ratio: 39 / 20;
+  width: 224px;
+  aspect-ratio: 3 / 2;
   border: 1px solid var(--rule-strong);
   background: var(--thumb-bg);
   overflow: hidden;
@@ -223,13 +281,26 @@ ul.plain li:last-child { margin-bottom: 0; }
   object-fit: contain;
 }
 
+.venue-badge {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 2;
+  padding: 3px 7px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.66);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+}
+
 .pub-body { flex: 1 1 auto; min-width: 0; }
 
-/* Entries with no thumbnail still line up with the ones that have one. */
-.pub:not(:has(.thumb)) .pub-body { margin-left: 282px; }
-
 .pub .title {
-  margin: 0 0 1px;
+  margin: 0 0 2px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.32;
@@ -241,7 +312,7 @@ ul.plain li:last-child { margin-bottom: 0; }
 .pub .authors {
   margin: 0 0 1px;
   font-size: 15.5px;
-  line-height: 1.38;
+  line-height: 1.4;
   text-align: justify;
 }
 .pub .authors b { font-weight: 700; }
@@ -251,18 +322,21 @@ ul.plain li:last-child { margin-bottom: 0; }
   font-size: 15.5px;
   line-height: 1.38;
 }
-.pub .venue b { font-weight: 700; }
 .pub .venue .note {
   color: var(--muted);
   font-size: 14.5px;
 }
+.pub .venue .hl {
+  color: var(--cat-bar);
+  font-size: 14.5px;
+  font-weight: 700;
+}
 
-/* Links are emitted in the markup as "[<a>paper</a>] [<a>code</a>]", so the
-   brackets come from the HTML and inherit the link colour from here. */
+/* "Paper | arXiv | Code": the bars come from the markup and stay grey. */
 .links {
-  display: block;
+  margin: 0;
   font-size: 15px;
-  color: var(--link);
+  color: var(--faint);
   line-height: 1.6;
 }
 .links:not(:has(a)) { display: none; }
@@ -271,6 +345,15 @@ ul.plain li:last-child { margin-bottom: 0; }
   width: auto;
   vertical-align: -4px;
   margin-left: 3px;
+}
+
+/* Left-aligned: these are one or two short lines, and justifying them opens
+   wide gaps. */
+.pub .tldr {
+  margin: 6px 0 0;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.42;
 }
 
 /* ---------- Industry experience ---------- */
@@ -333,11 +416,10 @@ ul.plain li:last-child { margin-bottom: 0; }
 
   .pub { flex-direction: column; gap: 10px; }
   .thumb { width: min(340px, 100%); }
-  .pub:not(:has(.thumb)) .pub-body { margin-left: 0; }
 
   .pub .title,
   .pub .authors,
-  .pub-group .blurb,
+  .cat-blurb,
   .news li,
   .exp-desc,
   .exp ul.plain li,

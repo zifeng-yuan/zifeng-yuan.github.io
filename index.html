@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zifeng Yuan</title>
-  <meta name="description" content="Zifeng Yuan — Postdoctoral Research Fellow, National University of Singapore. Photonic computing, photonic AI accelerators, polarization-engineered VCSELs, VLMs and LLMs.">
-  <link rel="stylesheet" href="style.css?v=2">
+  <meta name="description" content="Zifeng Yuan — Postdoctoral Research Fellow, National University of Singapore. AI and photonics: photonic AI infrastructure, polarization-engineered VCSELs, photonic computing, VLMs and LLMs.">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 <main class="page">
@@ -16,7 +16,7 @@
       <h1>Zifeng Yuan</h1>
       <p class="subtitle">Research Fellow, National University of Singapore</p>
       <div class="contact">
-        <a href="mailto:zyuan@u.nus.edu"><svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm0 1.4V12h12V4.4L8 8.6 2 4.4zM2.9 4l5.1 3.5L13.1 4H2.9z"/></svg>zyuan@u.nus.edu</a>
+        <a href="mailto:zfyuan@nus.edu.sg"><svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm0 1.4V12h12V4.4L8 8.6 2 4.4zM2.9 4l5.1 3.5L13.1 4H2.9z"/></svg>zfyuan@nus.edu.sg</a>
         <a href="https://www.linkedin.com/in/zifeng-yuan/" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM1.2 5.5h1.7V14H1.2V5.5zm3.3 0h1.6v1.2c.4-.8 1.3-1.4 2.6-1.4 2.6 0 3 1.7 3 3.9V14H10V9.7c0-1-.1-2.3-1.5-2.3s-1.6 1.1-1.6 2.2V14H5.2V5.5h-.7z"/></svg>LinkedIn</a>
       </div>
     </div>
@@ -29,16 +29,18 @@
   <!-- ===================== Biography ===================== -->
   <section class="section" id="biography">
     <p>I am a Postdoctoral Research Fellow at National University of Singapore (NUS), working with Professor <a href="https://scholar.google.com/citations?user=mJECTT4AAAAJ" target="_blank" rel="noopener">Benjamin Tee</a>. Prior to that, I received my Ph.D. in Electrical and Computer Engineering at NUS, advised by Professor <a href="https://scholar.google.com/citations?user=jDPLyooAAAAJ" target="_blank" rel="noopener">Aaron Danner</a>.</p>
-    <p>My research lies at the intersection of photonics and AI, spanning photonic computing hardware for unconventional computing models like Ising machines, photonic AI accelerators based on polarization-engineered VCSELs, and scientific reasoning in VLMs and LLMs.</p>
+    <p>My research lies at the intersection of AI and photonics, with a focus on photonic AI infrastructure. I build it from the device up: polarization-engineered VCSELs serve as fast and drive-efficient binary nodes, and on top of them I develop photonic computing hardware ranging from Ising machines to integrated matrix engines for neural networks. In parallel I study how vision-language models and large language models reason about physical and scientific problems.</p>
   </section>
 
   <!-- ===================== News ===================== -->
   <section class="section" id="news">
     <h2>News</h2>
     <ul class="news">
+      <li><span class="when">2026 Oct:</span> Invited to speak at the <b>4th Asian VCSEL Day</b> in Suzhou, China, which marks the 50th anniversary of the VCSEL.</li>
       <li><span class="when">2026 Sep:</span> Joined <a href="https://benjamintee.com/" target="_blank" rel="noopener">TEE Research Group @ NUS</a> as a Postdoctoral Research Fellow.</li>
       <li><span class="when">2026 Sep:</span> <a href="https://doi.org/10.1002/lpor.71890" target="_blank" rel="noopener">Drive-Efficient GHz-Rate Binary-State Updates Enabled by VCSEL Polarization Switching</a> got accepted by <i class="vn">Laser &amp; Photonics Reviews</i>.</li>
       <li><span class="when">2026 Jul:</span> <a href="https://eccv.ecva.net/virtual/2026/poster/4908" target="_blank" rel="noopener">WeatherReasonSeg</a> got accepted by <i class="vn">ECCV 2026</i>.</li>
+      <li><span class="when">2026 May:</span> Selected to present our work on switchable VCSEL polarization states for photonic Ising computing at the <i class="vn">International Workshop on Ising Machines (IISM 2026)</i> in Singapore.</li>
       <li><span class="when">2026 May:</span> Our group flew a fully solar-powered drone for <a href="https://cde.nus.edu.sg/news/solar-powered-drone-flies-past-four-hour-mark-in-endurance-milestone/" target="_blank" rel="noopener">four hours and 25 minutes in Alice Springs, Australia</a>, past the official endurance record for multirotor drones.</li>
       <li><span class="when">2026 May:</span> <a href="https://icml.cc/virtual/2026/poster/64104" target="_blank" rel="noopener">HypoSpace</a> got accepted by <i class="vn">ICML 2026</i>, selected for <b>Spotlight</b> presentation.</li>
       <li><span class="when">2025 Nov:</span> <a href="https://doi.org/10.1063/5.0291349" target="_blank" rel="noopener">Tailored Polarization-Switchable VCSEL Arrays for Photonic Ising Computing</a> got accepted by <i class="vn">Applied Physics Letters</i>, selected as a <b>Featured Article</b> and highlighted in AIP Scilight.</li>
@@ -51,191 +53,240 @@
   </section>
 
   <!-- ===================== Publications ===================== -->
+  <!-- Each paper is one <article class="pub">. data-category holds its topic
+       buttons (space separated, several allowed) and data-role holds the role
+       buttons it should answer to. See 使用說明.md for the full recipe. -->
   <section class="section" id="publications">
-    <h2>Publications</h2>
+    <h2>Selected Publications</h2>
 
-    <!-- ---------- Group A ---------- -->
-    <div class="pub-group" id="group-a">
-      <h3>💡 Photonic computing &amp; unconventional computing architectures</h3>
-      <p class="blurb">Turning light into a computational substrate: polarization-encoded VCSEL spins for Ising machines, all-optical annealers with parallel feedback, and integrated matrix engines for neural networks.</p>
+    <div class="pub-filters" id="pub-topic-filters" role="group" aria-label="Filter publications by topic">
+      <button type="button" class="pub-filter-btn active" data-cat="all" aria-pressed="true">All</button>
+      <button type="button" class="pub-filter-btn" data-cat="photonic-computing" aria-pressed="false"
+        data-blurb="Turning light into a computational substrate: polarization-encoded VCSEL spins for Ising machines, all-optical annealers with parallel feedback, and integrated matrix engines for neural networks.">Photonic Computing</button>
+      <button type="button" class="pub-filter-btn" data-cat="photonic-devices" aria-pressed="false"
+        data-blurb="The device layer underneath that hardware. An optical accelerator needs a binary state it can set and flip quickly and cheaply, and here that state is the polarization of a vertical-cavity laser, engineered through aperture shape and mesa orientation from cleanroom fabrication to spin-flip-model dynamics.">Photonic Devices</button>
+      <button type="button" class="pub-filter-btn" data-cat="vlm-llm" aria-pressed="false"
+        data-blurb="How far language and vision-language models get on scientific reasoning: hypothesis sets that stay consistent with the observations, structured state tracking over long discovery loops, and reasoning segmentation when the weather degrades the image.">VLM &amp; LLM</button>
+      <button type="button" class="pub-filter-btn" data-cat="vision" aria-pressed="false"
+        data-blurb="Recovering physics that a standard camera does not record directly, from polarization hidden in an RGB image to 3D scenes reconstructed through raindrops on the lens.">Physics-Aware Vision</button>
+      <button type="button" class="pub-filter-btn" data-cat="patent" aria-pressed="false">Patent</button>
+    </div>
 
-      <article class="pub" id="lpr2026">
-        <div class="thumb"><img src="assets/lpr2026_ghz_switching.png" alt=""></div>
+    <div class="pub-filters role-filters" id="pub-role-filters" role="group" aria-label="Filter publications by my role">
+      <button type="button" class="role-filter-btn active" data-role="all" aria-pressed="true">All Roles</button>
+      <button type="button" class="role-filter-btn" data-role="first-author" aria-pressed="false">First Author</button>
+      <button type="button" class="role-filter-btn" data-role="eq-contrib" aria-pressed="false"><span class="mark eq">*</span>Equal Contribution</button>
+      <button type="button" class="role-filter-btn" data-role="corr-author" aria-pressed="false"><span class="mark cl">†</span>Corresponding Author</button>
+      <span class="pub-count" id="pub-count" aria-live="polite"></span>
+    </div>
+
+    <p class="cat-blurb" id="cat-blurb" hidden></p>
+
+    <div class="pub-list" id="pub-list">
+
+      <!-- LPR 2026 -->
+      <article class="pub" data-category="photonic-computing photonic-devices" data-role="first-author">
+        <div class="thumb"><span class="venue-badge">LPR 2026</span><img src="assets/lpr2026_ghz_switching.png" alt=""></div>
         <div class="pub-body">
           <p class="title"><a href="https://doi.org/10.1002/lpor.71890" target="_blank" rel="noopener">Drive-Efficient GHz-Rate Binary-State Updates Enabled by VCSEL Polarization Switching</a></p>
-          <p class="authors"><b>Z. Yuan</b>, B. Lin, Y. Liu, W. Fu, Y. Gao, T. Chen, A. Danner</p>
-          <p class="venue">Laser &amp; Photonics Reviews, e71890, 2026 <span class="note">· Open Access</span></p>
-          <span class="links">[<a href="https://doi.org/10.1002/lpor.71890" target="_blank" rel="noopener">paper</a>]</span>
+          <p class="authors"><b>Zifeng Yuan</b>, Beibei Lin, Yutong Liu, Wujie Fu, Yuan Gao, Tingting Chen, Aaron Danner<sup class="cl">†</sup></p>
+          <p class="venue"><i>Laser &amp; Photonics Reviews</i>, 2026 <span class="note">· Open Access</span></p>
+          <p class="links"><a href="https://doi.org/10.1002/lpor.71890" target="_blank" rel="noopener">Paper</a></p>
+          <p class="tldr">Biasing a VCSEL at its polarization-switching point and reading out one polarization channel raises the modulation amplitude by about 10&nbsp;dB and opens the 1.25&nbsp;Gb/s eye.</p>
         </div>
       </article>
 
-      <article class="pub" id="apl127">
-        <div class="thumb"><img src="assets/apl2025_ising_vcsel.png" alt="" loading="lazy"></div>
-        <div class="pub-body">
-          <p class="title"><a href="https://doi.org/10.1063/5.0291349" target="_blank" rel="noopener">Tailored polarization-switchable VCSEL arrays for photonic Ising computing</a></p>
-          <p class="authors"><b>Z. Yuan</b>, T. Chen, D. Zhang, Y. Gao, W. Shan, B. Lin, A. Danner</p>
-          <p class="venue">Applied Physics Letters 127, 221102, 2025 <span class="note">· Featured Article · highlighted in AIP Scilight</span></p>
-          <span class="links">[<a href="https://doi.org/10.1063/5.0291349" target="_blank" rel="noopener">paper</a>]</span>
-        </div>
-      </article>
-
-      <article class="pub" id="oe33">
-        <div class="thumb"><img src="assets/oe2025_annealer.png" alt="" loading="lazy"></div>
-        <div class="pub-body">
-          <p class="title"><a href="https://doi.org/10.1364/OE.546402" target="_blank" rel="noopener">All-Optical Scalable and Programmable VCSEL-based Ising Annealer with Parallel Feedback</a></p>
-          <p class="authors">D. Zhang, <b>Z. Yuan</b>, T. X. Hoang, W. Fu, C. E. Png, S. T. Lim, A. Danner</p>
-          <p class="venue">Optics Express 33(11), 22119–22131, 2025</p>
-          <span class="links">[<a href="https://doi.org/10.1364/OE.546402" target="_blank" rel="noopener">paper</a>]</span>
-        </div>
-      </article>
-
-      <article class="pub" id="apr11">
-        <div class="thumb"><img src="assets/apr2024_ising_review.png" alt="" loading="lazy"></div>
-        <div class="pub-body">
-          <p class="title"><a href="https://doi.org/10.1063/5.0216656" target="_blank" rel="noopener">Photonic Ising machines for combinatorial optimization problems</a></p>
-          <p class="authors">Y. Gao, G. Chen, L. Qi, W. Fu, <b>Z. Yuan</b>, A. J. Danner</p>
-          <p class="venue">Applied Physics Reviews 11, 041307, 2024 <span class="note">· Review</span></p>
-          <span class="links">[<a href="https://doi.org/10.1063/5.0216656" target="_blank" rel="noopener">paper</a>]</span>
-        </div>
-      </article>
-
-      <article class="pub" id="olt192">
-        <div class="thumb"><img src="assets/olt2025_mamc.png" alt="" loading="lazy"></div>
-        <div class="pub-body">
-          <p class="title"><a href="https://doi.org/10.1016/j.optlastec.2025.113740" target="_blank" rel="noopener">A lithium niobate cascaded MMI-based arbitrary matrix calculator for convolutional neural networks</a></p>
-          <p class="authors">Y. Liu, P. Aashna, <b>Z. Yuan</b>, W. Fu, M. Yang, Y. Yan, L. Qi, M. Zhao, A. Danner</p>
-          <p class="venue">Optics &amp; Laser Technology 192, 113740, 2025</p>
-          <span class="links">[<a href="https://doi.org/10.1016/j.optlastec.2025.113740" target="_blank" rel="noopener">paper</a>]</span>
-        </div>
-      </article>
-
-      <article class="pub" id="jom4">
-        <div class="thumb"><img src="assets/jom2023_injection_locking.png" alt="" loading="lazy"></div>
-        <div class="pub-body">
-          <p class="title"><a href="https://doi.org/10.1117/1.JOM.4.1.014501" target="_blank" rel="noopener">Linear polarization state encoding for Ising computing with optically injection-locked VCSELs</a></p>
-          <p class="authors">B. Loke, <b>Z. Yuan</b>, S. T. Lim, A. Danner</p>
-          <p class="venue">Journal of Optical Microsystems 4, 014501, 2023</p>
-          <span class="links">[<a href="https://doi.org/10.1117/1.JOM.4.1.014501" target="_blank" rel="noopener">paper</a>]</span>
-        </div>
-      </article>
-    </div>
-
-    <!-- ---------- Group B ---------- -->
-    <div class="pub-group" id="group-b">
-      <h3>🔦 Photonic AI accelerators &amp; polarization-engineered VCSELs</h3>
-      <p class="blurb">The device layer underneath that hardware. An optical accelerator needs a binary state it can set and flip quickly and cheaply — here that state is the polarization of a vertical-cavity laser, engineered through aperture shape and mesa orientation, from cleanroom fabrication to spin-flip-model dynamics.</p>
-
-      <article class="pub" id="apl126">
-        <div class="thumb"><img src="assets/apl2025_pol_locking.png" alt="" loading="lazy"></div>
-        <div class="pub-body">
-          <p class="title"><a href="https://doi.org/10.1063/5.0259836" target="_blank" rel="noopener">Enhanced polarization locking in VCSELs</a></p>
-          <p class="authors"><b>Z. Yuan</b>, D. Zhang, L. Shi, Y. Liu, A. Danner</p>
-          <p class="venue">Applied Physics Letters 126, 151101, 2025</p>
-          <span class="links">[<a href="https://doi.org/10.1063/5.0259836" target="_blank" rel="noopener">paper</a>] [<a href="https://arxiv.org/abs/2604.01857" target="_blank" rel="noopener">arXiv</a>]</span>
-        </div>
-      </article>
-
-      <article class="pub" id="jlt43">
-        <div class="thumb"><img src="assets/jlt2025_apertures.png" alt="" loading="lazy"></div>
-        <div class="pub-body">
-          <p class="title"><a href="https://doi.org/10.1109/JLT.2025.3568130" target="_blank" rel="noopener">Large-Scale Fabrication and Analysis of Polarization Behavior in VCSELs with Tailored Apertures</a></p>
-          <p class="authors"><b>Z. Yuan</b>, D. Zhang, Y. Gao, L. Qi, W. Fu, A. Danner</p>
-          <p class="venue">Journal of Lightwave Technology 43, 6819–6827, 2025</p>
-          <span class="links">[<a href="https://doi.org/10.1109/JLT.2025.3568130" target="_blank" rel="noopener">paper</a>]</span>
-        </div>
-      </article>
-
-      <article class="pub" id="ipc25">
-        <div class="thumb"><img src="assets/ipc2025_mesa_locking.png" alt="" loading="lazy"></div>
-        <div class="pub-body">
-          <p class="title"><a href="https://doi.org/10.1109/IPC65510.2025.11282171" target="_blank" rel="noopener">Mesa Orientation Engineering for Polarization Locking in VCSELs</a></p>
-          <p class="authors"><b>Z. Yuan</b>, W. Shan, T. Chen, B. Lin, A. Danner</p>
-          <p class="venue">IEEE Photonics Conference (<b>IPC</b>), 2025</p>
-          <span class="links">[<a href="https://doi.org/10.1109/IPC65510.2025.11282171" target="_blank" rel="noopener">paper</a>] [<a href="https://arxiv.org/abs/2608.24075" target="_blank" rel="noopener">arXiv</a>]</span>
-        </div>
-      </article>
-
-      <article class="pub" id="cleo25s">
-        <div class="thumb"><img src="assets/cleo2025_switching.png" alt="" loading="lazy"></div>
-        <div class="pub-body">
-          <p class="title"><a href="https://doi.org/10.1364/CLEO_AT.2025.JPS200_47" target="_blank" rel="noopener">Engineering polarization switching in VCSELs with custom aperture shapes</a></p>
-          <p class="authors"><b>Z. Yuan</b>, D. Zhang, H. L. Lin, A. Danner</p>
-          <p class="venue">Conference on Lasers and Electro-Optics (<b>CLEO</b>): Science and Innovations, 2025</p>
-          <span class="links">[<a href="https://doi.org/10.1364/CLEO_AT.2025.JPS200_47" target="_blank" rel="noopener">paper</a>] [<a href="https://arxiv.org/abs/2608.16597" target="_blank" rel="noopener">arXiv</a>]</span>
-        </div>
-      </article>
-    </div>
-
-    <!-- ---------- Group C ---------- -->
-    <div class="pub-group" id="group-c">
-      <h3>🤖 VLMs &amp; LLMs</h3>
-      <p class="blurb">Where the physics comes back in: new tasks that ask how much of the physical world these models actually recover, from polarization hidden in an RGB image to scenes degraded by rain, snow and fog, and hypotheses that must stay consistent with the observations they were derived from.</p>
-
-      <article class="pub" id="icml26">
-        <div class="thumb"><img src="assets/icml2026_hypospace.png" alt="" loading="lazy"></div>
-        <div class="pub-body">
-          <p class="title"><a href="https://icml.cc/virtual/2026/poster/64104" target="_blank" rel="noopener">HypoSpace: A Diagnostic Benchmark for Set-Valued Hypothesis Generation under Underdetermination and Sublinear Coverage Bounds</a></p>
-          <p class="authors">T. Chen, B. Lin, <b>Z. Yuan</b>, Q. Zou, H. He, A. Goyal, Y. S. Ong, D. Liu</p>
-          <p class="venue">International Conference on Machine Learning (<b>ICML</b>), 2026 <span class="note">· Spotlight</span></p>
-          <span class="links">[<a href="https://icml.cc/virtual/2026/poster/64104" target="_blank" rel="noopener">paper</a>] [<a href="https://arxiv.org/abs/2510.15614" target="_blank" rel="noopener">arXiv</a>] [<a href="https://github.com/CTT-Pavilion/_HypoSpace" target="_blank" rel="noopener">code</a>] <a href="https://github.com/CTT-Pavilion/_HypoSpace" target="_blank" rel="noopener"><img class="stars" src="https://img.shields.io/github/stars/CTT-Pavilion/_HypoSpace?style=social" alt="GitHub stars" loading="lazy"></a></span>
-        </div>
-      </article>
-
-      <article class="pub" id="eccv26">
-        <div class="thumb"><img src="assets/eccv2026_weatherreasonseg.png" alt="" loading="lazy"></div>
+      <!-- ECCV 2026 -->
+      <article class="pub" data-category="vlm-llm vision" data-role="eq-contrib">
+        <div class="thumb"><span class="venue-badge">ECCV 2026</span><img src="assets/eccv2026_weatherreasonseg.png" alt="" loading="lazy"></div>
         <div class="pub-body">
           <p class="title"><a href="https://eccv.ecva.net/virtual/2026/poster/4908" target="_blank" rel="noopener">WeatherReasonSeg: A Benchmark for Weather-Aware Reasoning Segmentation in Visual Language Models</a></p>
-          <p class="authors">W. Du*, <b>Z. Yuan</b>*, T. Chen, F. Ke, B. Lin, S. Zhang</p>
-          <p class="venue">European Conference on Computer Vision (<b>ECCV</b>), 2026 <span class="note">· *equal contribution</span></p>
-          <span class="links">[<a href="https://eccv.ecva.net/virtual/2026/poster/4908" target="_blank" rel="noopener">paper</a>] [<a href="https://arxiv.org/abs/2603.17680" target="_blank" rel="noopener">arXiv</a>]</span>
+          <p class="authors">Wanjun Du<sup class="eq">*</sup>, <b>Zifeng Yuan</b><sup class="eq">*</sup>, Tingting Chen, Fucai Ke, Beibei Lin, Shunli Zhang<sup class="cl">†</sup></p>
+          <p class="venue"><i>European Conference on Computer Vision (ECCV)</i>, 2026, Malmö, Sweden</p>
+          <p class="links"><a href="https://eccv.ecva.net/virtual/2026/poster/4908" target="_blank" rel="noopener">Paper</a> | <a href="https://arxiv.org/abs/2603.17680" target="_blank" rel="noopener">arXiv</a></p>
+          <p class="tldr">44,721 image–query pairs across synthetic and real rain, snow, fog and night. VLM reasoning segmentation degrades monotonically with weather severity.</p>
         </div>
       </article>
 
-      <article class="pub" id="neurips25">
-        <div class="thumb"><img src="assets/neurips2025_rgb2pol.png" alt="" loading="lazy"></div>
+      <!-- ICML 2026 -->
+      <article class="pub" data-category="vlm-llm" data-role="">
+        <div class="thumb"><span class="venue-badge">ICML 2026</span><img src="assets/icml2026_hypospace.png" alt="" loading="lazy"></div>
+        <div class="pub-body">
+          <p class="title"><a href="https://icml.cc/virtual/2026/poster/64104" target="_blank" rel="noopener">HypoSpace: A Diagnostic Benchmark for Set-Valued Hypothesis Generation under Underdetermination and Sublinear Coverage Bounds</a></p>
+          <p class="authors">Tingting Chen, Beibei Lin, <b>Zifeng Yuan</b>, Qiran Zou, Hongyu He, Anirudh Goyal, Yew-Soon Ong, Dianbo Liu</p>
+          <p class="venue"><i>International Conference on Machine Learning (ICML)</i>, 2026, Seoul, South Korea <span class="hl">· Spotlight</span></p>
+          <p class="links"><a href="https://icml.cc/virtual/2026/poster/64104" target="_blank" rel="noopener">Paper</a> | <a href="https://arxiv.org/abs/2510.15614" target="_blank" rel="noopener">arXiv</a> | <a href="https://github.com/CTT-Pavilion/_HypoSpace" target="_blank" rel="noopener">Code</a> <a href="https://github.com/CTT-Pavilion/_HypoSpace" target="_blank" rel="noopener"><img class="stars" src="https://img.shields.io/github/stars/CTT-Pavilion/_HypoSpace?style=social" alt="GitHub stars" loading="lazy"></a></p>
+          <p class="tldr">Treats LLMs as samplers of hypothesis sets. Validity stays high while uniqueness and recovery collapse as the space of admissible explanations grows.</p>
+        </div>
+      </article>
+
+      <!-- NeurIPS 2025 -->
+      <article class="pub" data-category="vision" data-role="eq-contrib corr-author">
+        <div class="thumb"><span class="venue-badge">NeurIPS 2025</span><img src="assets/neurips2025_rgb2pol.png" alt="" loading="lazy"></div>
         <div class="pub-body">
           <p class="title"><a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/30697d9ef8ce55de6ccc38e043a94142-Abstract-Datasets_and_Benchmarks_Track.html" target="_blank" rel="noopener">RGB-to-Polarization Estimation: A New Task and Benchmark Study</a></p>
-          <p class="authors">B. Lin*, <b>Z. Yuan</b>*✉, T. Chen</p>
-          <p class="venue">Conference on Neural Information Processing Systems (<b>NeurIPS</b>), 2025 <span class="note">· *equal contribution · ✉corresponding author</span></p>
-          <span class="links">[<a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/30697d9ef8ce55de6ccc38e043a94142-Abstract-Datasets_and_Benchmarks_Track.html" target="_blank" rel="noopener">paper</a>] [<a href="https://arxiv.org/abs/2505.13050" target="_blank" rel="noopener">arXiv</a>] [<a href="https://github.com/bb12346/Polarization2RGB" target="_blank" rel="noopener">code</a>] <a href="https://github.com/bb12346/Polarization2RGB" target="_blank" rel="noopener"><img class="stars" src="https://img.shields.io/github/stars/bb12346/Polarization2RGB?style=social" alt="GitHub stars" loading="lazy"></a></span>
+          <p class="authors">Beibei Lin<sup class="eq">*</sup>, <b>Zifeng Yuan</b><sup class="eq">*</sup><sup class="cl">†</sup>, Tingting Chen<sup class="eq">*</sup></p>
+          <p class="venue"><i>Conference on Neural Information Processing Systems (NeurIPS)</i>, Datasets and Benchmarks Track, 2025, San Diego, USA</p>
+          <p class="links"><a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/30697d9ef8ce55de6ccc38e043a94142-Abstract-Datasets_and_Benchmarks_Track.html" target="_blank" rel="noopener">Paper</a> | <a href="https://arxiv.org/abs/2505.13050" target="_blank" rel="noopener">arXiv</a> | <a href="https://github.com/bb12346/Polarization2RGB" target="_blank" rel="noopener">Code</a> <a href="https://github.com/bb12346/Polarization2RGB" target="_blank" rel="noopener"><img class="stars" src="https://img.shields.io/github/stars/bb12346/Polarization2RGB?style=social" alt="GitHub stars" loading="lazy"></a></p>
+          <p class="tldr">Introduces RGB-to-polarization estimation as a new vision task and builds the first benchmark for sensor-free polarization imaging.</p>
         </div>
       </article>
 
-      <article class="pub" id="raindropgs">
-        <div class="thumb"><img src="assets/raindropgs2025_pipeline.png" alt="" loading="lazy"></div>
+      <!-- APL 127 -->
+      <article class="pub" data-category="photonic-computing photonic-devices" data-role="first-author">
+        <div class="thumb"><span class="venue-badge">APL 2025</span><img src="assets/apl2025_ising_vcsel.png" alt="" loading="lazy"></div>
+        <div class="pub-body">
+          <p class="title"><a href="https://doi.org/10.1063/5.0291349" target="_blank" rel="noopener">Tailored Polarization-Switchable VCSEL Arrays for Photonic Ising Computing</a></p>
+          <p class="authors"><b>Zifeng Yuan</b>, Tingting Chen, Dewen Zhang, Yuan Gao, Wenkai Shan, Beibei Lin, Aaron Danner<sup class="cl">†</sup></p>
+          <p class="venue"><i>Applied Physics Letters</i> 127, 221102, 2025 <span class="hl">· Featured Article · AIP Scilight</span></p>
+          <p class="links"><a href="https://doi.org/10.1063/5.0291349" target="_blank" rel="noopener">Paper</a> | <a href="https://www.aip.org/scilights/array-demonstrates-path-to-photonic-ising-computers" target="_blank" rel="noopener">Scilight</a></p>
+          <p class="tldr">Tailored oxidation apertures cancel the built-in anisotropy of VCSEL arrays. Switchable devices lock at 3.6&nbsp;µW of injected power, against 17.5&nbsp;µW for square apertures.</p>
+        </div>
+      </article>
+
+      <!-- OLT 192 -->
+      <article class="pub" data-category="photonic-computing" data-role="">
+        <div class="thumb"><span class="venue-badge">OLT 2025</span><img src="assets/olt2025_mamc.png" alt="" loading="lazy"></div>
+        <div class="pub-body">
+          <p class="title"><a href="https://doi.org/10.1016/j.optlastec.2025.113740" target="_blank" rel="noopener">A Lithium Niobate Cascaded MMI-Based Arbitrary Matrix Calculator for Convolutional Neural Networks</a></p>
+          <p class="authors">Yutong Liu, Pragati Aashna, <b>Zifeng Yuan</b>, Wujie Fu, Mingxiang Yang, Yunjie Yan, Luo Qi<sup class="cl">†</sup>, Mingshan Zhao<sup class="cl">†</sup>, Aaron Danner</p>
+          <p class="venue"><i>Optics &amp; Laser Technology</i> 192, 113740, 2025</p>
+          <p class="links"><a href="https://doi.org/10.1016/j.optlastec.2025.113740" target="_blank" rel="noopener">Paper</a></p>
+          <p class="tldr">An MMI matrix calculator runs both the convolutional and fully connected layers of a CNN, reaching 93.51% on 10-class MNIST through matrix partitioning.</p>
+        </div>
+      </article>
+
+      <!-- Optics Express 33 -->
+      <article class="pub" data-category="photonic-computing" data-role="">
+        <div class="thumb"><span class="venue-badge">Opt. Express 2025</span><img src="assets/oe2025_annealer.png" alt="" loading="lazy"></div>
+        <div class="pub-body">
+          <p class="title"><a href="https://doi.org/10.1364/OE.546402" target="_blank" rel="noopener">All-Optical Scalable and Programmable VCSEL-Based Ising Annealer with Parallel Feedback</a></p>
+          <p class="authors">Dewen Zhang, <b>Zifeng Yuan</b>, Thanh Xuan Hoang, Wujie Fu, Ching Eng Png, Soon Thor Lim, Aaron Danner<sup class="cl">†</sup></p>
+          <p class="venue"><i>Optics Express</i> 33(11), 22119–22131, 2025</p>
+          <p class="links"><a href="https://doi.org/10.1364/OE.546402" target="_blank" rel="noopener">Paper</a></p>
+          <p class="tldr">Mutually injection-locked VCSELs with programmable parallel feedback solve 16-bit MAX-CUT in simulation, and polarization switching needs under 1% of the master laser's power.</p>
+        </div>
+      </article>
+
+      <!-- JLT 43 -->
+      <article class="pub" data-category="photonic-devices" data-role="first-author">
+        <div class="thumb"><span class="venue-badge">JLT 2025</span><img src="assets/jlt2025_apertures.png" alt="" loading="lazy"></div>
+        <div class="pub-body">
+          <p class="title"><a href="https://doi.org/10.1109/JLT.2025.3568130" target="_blank" rel="noopener">Large-Scale Fabrication and Analysis of Polarization Behavior in VCSELs with Tailored Apertures</a></p>
+          <p class="authors"><b>Zifeng Yuan</b>, Dewen Zhang, Yuan Gao, Luo Qi, Wujie Fu, Aaron Danner<sup class="cl">†</sup></p>
+          <p class="venue"><i>Journal of Lightwave Technology</i> 43, 6819–6827, 2025</p>
+          <p class="links"><a href="https://doi.org/10.1109/JLT.2025.3568130" target="_blank" rel="noopener">Paper</a></p>
+          <p class="tldr">Hundreds of fabricated VCSELs with different oxide-aperture shapes and sizes give design rules that link aperture geometry to polarization preference and switching.</p>
+        </div>
+      </article>
+
+      <!-- APL 126 -->
+      <article class="pub" data-category="photonic-devices" data-role="first-author">
+        <div class="thumb"><span class="venue-badge">APL 2025</span><img src="assets/apl2025_pol_locking.png" alt="" loading="lazy"></div>
+        <div class="pub-body">
+          <p class="title"><a href="https://doi.org/10.1063/5.0259836" target="_blank" rel="noopener">Enhanced Polarization Locking in VCSELs</a></p>
+          <p class="authors"><b>Zifeng Yuan</b>, Dewen Zhang, Lei Shi, Yutong Liu, Aaron Danner<sup class="cl">†</sup></p>
+          <p class="venue"><i>Applied Physics Letters</i> 126, 151101, 2025</p>
+          <p class="links"><a href="https://doi.org/10.1063/5.0259836" target="_blank" rel="noopener">Paper</a> | <a href="https://arxiv.org/abs/2604.01857" target="_blank" rel="noopener">arXiv</a></p>
+          <p class="tldr">Tailored apertures combined with bias-current tuning cut the injection power needed for polarization locking to 3.6&nbsp;µW and widen the locking range.</p>
+        </div>
+      </article>
+
+      <!-- IPC 2025 -->
+      <article class="pub" data-category="photonic-devices" data-role="first-author">
+        <div class="thumb"><span class="venue-badge">IPC 2025</span><img src="assets/ipc2025_mesa_locking.png" alt="" loading="lazy"></div>
+        <div class="pub-body">
+          <p class="title"><a href="https://doi.org/10.1109/IPC65510.2025.11282171" target="_blank" rel="noopener">Mesa Orientation Engineering for Polarization Locking in VCSELs</a></p>
+          <p class="authors"><b>Zifeng Yuan</b>, Wenkai Shan, Tingting Chen, Beibei Lin, Aaron Danner<sup class="cl">†</sup></p>
+          <p class="venue"><i>IEEE Photonics Conference (IPC)</i>, 2025, Singapore</p>
+          <p class="links"><a href="https://doi.org/10.1109/IPC65510.2025.11282171" target="_blank" rel="noopener">Paper</a> | <a href="https://arxiv.org/abs/2608.24075" target="_blank" rel="noopener">arXiv</a></p>
+          <p class="tldr">Orienting the VCSEL mesa engineers its polarization switching and improves polarization locking.</p>
+        </div>
+      </article>
+
+      <!-- CLEO 2025 S&I -->
+      <article class="pub" data-category="photonic-devices" data-role="first-author">
+        <div class="thumb"><span class="venue-badge">CLEO 2025</span><img src="assets/cleo2025_switching.png" alt="" loading="lazy"></div>
+        <div class="pub-body">
+          <p class="title"><a href="https://doi.org/10.1364/CLEO_AT.2025.JPS200_47" target="_blank" rel="noopener">Engineering Polarization Switching in VCSELs with Custom Aperture Shapes</a></p>
+          <p class="authors"><b>Zifeng Yuan</b>, Dewen Zhang, Hong-Lin Lin, Aaron Danner<sup class="cl">†</sup></p>
+          <p class="venue"><i>Conference on Lasers and Electro-Optics (CLEO)</i>: Science and Innovations, 2025, Long Beach, USA</p>
+          <p class="links"><a href="https://doi.org/10.1364/CLEO_AT.2025.JPS200_47" target="_blank" rel="noopener">Paper</a> | <a href="https://arxiv.org/abs/2608.16597" target="_blank" rel="noopener">arXiv</a></p>
+          <p class="tldr">Custom aperture shapes give predictable polarization control and switching for polarization-encoded photonic computing.</p>
+        </div>
+      </article>
+
+      <!-- RaindropGS -->
+      <article class="pub" data-category="vision" data-role="">
+        <div class="thumb"><span class="venue-badge">arXiv 2025</span><img src="assets/raindropgs2025_pipeline.png" alt="" loading="lazy"></div>
         <div class="pub-body">
           <p class="title"><a href="https://arxiv.org/abs/2510.17719" target="_blank" rel="noopener">RaindropGS: A Benchmark for 3D Gaussian Splatting under Raindrop Conditions</a></p>
-          <p class="authors">Z. Teng, T. Chen, B. Lin, <b>Z. Yuan</b>, X. Li, X. Zhang, S. Zhang</p>
-          <p class="venue">arXiv:2510.17719, 2025</p>
-          <span class="links">[<a href="https://arxiv.org/abs/2510.17719" target="_blank" rel="noopener">arXiv</a>]</span>
+          <p class="authors">Zhiqiang Teng, Tingting Chen, Beibei Lin, <b>Zifeng Yuan</b>, Xuanyi Li, Xuanyu Zhang, Shunli Zhang</p>
+          <p class="venue"><i>arXiv preprint</i> arXiv:2510.17719, 2025</p>
+          <p class="links"><a href="https://arxiv.org/abs/2510.17719" target="_blank" rel="noopener">arXiv</a></p>
+          <p class="tldr">Evaluates the full 3DGS pipeline from unconstrained raindrop-corrupted images, with 11 real scenes captured as raindrop-focused, background-focused and rain-free sets.</p>
         </div>
       </article>
 
-      <article class="pub" id="adb">
-        <div class="thumb"><img src="assets/adb2026_discovery.png" alt="" loading="lazy"></div>
+      <!-- Auto-Discovery-Bench -->
+      <article class="pub" data-category="vlm-llm" data-role="">
+        <div class="thumb"><span class="venue-badge">arXiv 2025</span><img src="assets/adb2026_discovery.png" alt="" loading="lazy"></div>
         <div class="pub-body">
           <p class="title"><a href="https://arxiv.org/abs/2502.15224" target="_blank" rel="noopener">Auto-Discovery-Bench: Diagnosing Structured State Tracking in Oracle-Guided Discovery</a></p>
-          <p class="authors">T. Chen, B. Lin, S. Anumasa, V. Shah, <b>Z. Yuan</b>, Q. Zou, A. Goyal, D. Liu</p>
-          <p class="venue">arXiv:2502.15224, 2025</p>
-          <span class="links">[<a href="https://arxiv.org/abs/2502.15224" target="_blank" rel="noopener">arXiv</a>]</span>
+          <p class="authors">Tingting Chen, Beibei Lin, Srinivas Anumasa, Vedant Shah, <b>Zifeng Yuan</b>, Qiran Zou, Anirudh Goyal, Dianbo Liu</p>
+          <p class="venue"><i>arXiv preprint</i> arXiv:2502.15224, 2025</p>
+          <p class="links"><a href="https://arxiv.org/abs/2502.15224" target="_blank" rel="noopener">arXiv</a></p>
+          <p class="tldr">Agents recover hidden structure through hypothesis–intervention–feedback loops. Many failures remain even without intervention choice or hypothesis generation, which points to long-range state tracking.</p>
         </div>
       </article>
-    </div>
 
-    <!-- ---------- Patent ---------- -->
-    <div class="pub-group" id="patent-group">
-      <h3>📄 Patent</h3>
-
-      <article class="pub" id="patent">
-        <div class="thumb"><img src="assets/patent_ising_machine.png" alt="" loading="lazy"></div>
+      <!-- Patent -->
+      <article class="pub" data-category="patent photonic-computing" data-role="">
+        <div class="thumb"><span class="venue-badge">US Patent App.</span><img src="assets/patent_ising_machine.png" alt="" loading="lazy"></div>
         <div class="pub-body">
           <p class="title"><a href="https://patents.google.com/patent/US20250279627A1/en" target="_blank" rel="noopener">VCSEL-Based All-Optical Ising Machine</a></p>
-          <p class="authors">D. Zhang, <b>Z. Yuan</b>, A. J. Danner, S. T. Lim, T. X. Hoang</p>
-          <p class="venue">US Patent Application 19/068,345 (published as US 2025/0279627 A1), 2025</p>
-          <span class="links">[<a href="https://patents.google.com/patent/US20250279627A1/en" target="_blank" rel="noopener">patent</a>]</span>
+          <p class="authors">Dewen Zhang, <b>Zifeng Yuan</b>, Aaron J. Danner, Soon Thor Lim, Thanh Xuan Hoang</p>
+          <p class="venue"><i>US Patent Application</i> 19/068,345 (published as US 2025/0279627 A1), 2025</p>
+          <p class="links"><a href="https://patents.google.com/patent/US20250279627A1/en" target="_blank" rel="noopener">Patent</a></p>
         </div>
       </article>
+
+      <!-- APR 11 -->
+      <article class="pub" data-category="photonic-computing" data-role="">
+        <div class="thumb"><span class="venue-badge">APR 2024</span><img src="assets/apr2024_ising_review.png" alt="" loading="lazy"></div>
+        <div class="pub-body">
+          <p class="title"><a href="https://doi.org/10.1063/5.0216656" target="_blank" rel="noopener">Photonic Ising Machines for Combinatorial Optimization Problems</a></p>
+          <p class="authors">Yuan Gao<sup class="eq">*</sup>, Guanyu Chen<sup class="eq">*</sup><sup class="cl">†</sup>, Luo Qi, Wujie Fu, <b>Zifeng Yuan</b>, Aaron J. Danner<sup class="cl">†</sup></p>
+          <p class="venue"><i>Applied Physics Reviews</i> 11, 041307, 2024 <span class="note">· Review</span></p>
+          <p class="links"><a href="https://doi.org/10.1063/5.0216656" target="_blank" rel="noopener">Paper</a></p>
+          <p class="tldr">A review of photonic Ising machines, from their physical realizations to how they compare with non-photonic solvers.</p>
+        </div>
+      </article>
+
+      <!-- JOM 4 -->
+      <article class="pub" data-category="photonic-computing" data-role="">
+        <div class="thumb"><span class="venue-badge">JOM 2024</span><img src="assets/jom2023_injection_locking.png" alt="" loading="lazy"></div>
+        <div class="pub-body">
+          <p class="title"><a href="https://doi.org/10.1117/1.JOM.4.1.014501" target="_blank" rel="noopener">Linear Polarization State Encoding for Ising Computing with Optically Injection-Locked VCSELs</a></p>
+          <p class="authors">Brandon Loke, <b>Zifeng Yuan</b>, Soon Thor Lim, Aaron Danner<sup class="cl">†</sup></p>
+          <p class="venue"><i>Journal of Optical Microsystems</i> 4(1), 014501, 2024 <span class="note">· Open Access</span></p>
+          <p class="links"><a href="https://doi.org/10.1117/1.JOM.4.1.014501" target="_blank" rel="noopener">Paper</a> | <a href="https://spie.org/news/encoding-computers-of-the-future" target="_blank" rel="noopener">SPIE News</a></p>
+          <p class="tldr">Extends the spin-flip model to mutually injection-locked VCSELs, which then solve 2-, 3- and 4-bit Ising problems well above chance.</p>
+        </div>
+      </article>
+
     </div>
+
+    <p class="pub-empty" id="pub-empty" hidden>No publications match this combination. Pick another topic or role.</p>
+  </section>
+
+  <!-- ===================== Talks ===================== -->
+  <section class="section" id="talks">
+    <h2>Invited Talks &amp; Presentations</h2>
+    <ul class="news">
+      <li><span class="when">2026 Oct:</span> <b>Invited talk</b> at the <i class="vn">4th Asian VCSEL Day</i>, Suzhou, China: “From Magnetic Recording to Photonic Ising Machines: Engineering VCSEL Apertures and Polarization”.</li>
+      <li><span class="when">2026 May:</span> Poster at the <i class="vn">International Workshop on Ising Machines (IISM 2026)</i>, Singapore: “Switchable VCSEL Polarization States for Photonic Ising Computing”.</li>
+    </ul>
   </section>
 
   <!-- ===================== Industry Experience ===================== -->
@@ -243,7 +294,7 @@
     <h2>Industry Experience</h2>
 
     <div class="exp">
-      <p class="exp-head"><span><a class="exp-org" href="https://xianghangkeji.com/en/index.html" target="_blank" rel="noopener">XHOLO</a> · <span class="exp-role">R&amp;D Engineering Intern</span></span>
+      <p class="exp-head"><span><a class="exp-org" href="https://www.xianghangkeji.com/en/index.html" target="_blank" rel="noopener">XHOLO</a> · <span class="exp-role">R&amp;D Engineering Intern</span></span>
         <span class="when">Sep 2021 – Jun 2022</span></p>
       <p class="exp-desc">A start-up building aerial displays whose touchable images float in mid-air with no screen in between.</p>
       <ul class="plain">
@@ -264,5 +315,66 @@
   <footer class="footer">© 2026 Zifeng Yuan</footer>
 
 </main>
+
+<script>
+/* Publication filters, after jinyeying.github.io: one topic at a time, and an
+   optional role that toggles off when its button is clicked again. A paper
+   shows only if it matches both. */
+(function () {
+  var topic = 'all', role = 'all';
+  var topicBtns = document.querySelectorAll('#pub-topic-filters .pub-filter-btn');
+  var roleBtns = document.querySelectorAll('#pub-role-filters .role-filter-btn');
+  var pubs = document.querySelectorAll('#pub-list .pub');
+  var blurb = document.getElementById('cat-blurb');
+  var empty = document.getElementById('pub-empty');
+  var count = document.getElementById('pub-count');
+
+  function has(list, value) {
+    return (list || '').split(/\s+/).indexOf(value) !== -1;
+  }
+
+  function apply() {
+    var shown = 0;
+    pubs.forEach(function (pub) {
+      var ok = (topic === 'all' || has(pub.dataset.category, topic)) &&
+               (role === 'all' || has(pub.dataset.role, role));
+      pub.hidden = !ok;
+      if (ok) shown++;
+    });
+    empty.hidden = shown > 0;
+    count.textContent = shown === pubs.length ? pubs.length + ' papers'
+                                              : shown + ' of ' + pubs.length + ' papers';
+  }
+
+  function mark(btns, key, value) {
+    btns.forEach(function (btn) {
+      var on = btn.dataset[key] === value;
+      btn.classList.toggle('active', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  }
+
+  topicBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      topic = btn.dataset.cat;
+      mark(topicBtns, 'cat', topic);
+      var text = btn.dataset.blurb || '';
+      blurb.textContent = text;
+      blurb.hidden = !text;
+      apply();
+    });
+  });
+
+  roleBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      role = (role === btn.dataset.role) ? 'all' : btn.dataset.role;
+      mark(roleBtns, 'role', role);
+      apply();
+    });
+  });
+
+  apply();
+})();
+</script>
 </body>
 </html>
